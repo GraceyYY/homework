@@ -1,0 +1,47 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>盒模型-作业3</title>
+    <style>
+        div.box {
+            width: 400px;
+            height: 200px;
+            border: solid 5px black;
+            margin: 5px;
+            float: left;
+        }
+
+        div.row {
+            overflow: hidden;
+            /* 防止当浏览器窗口变窄时，box自动浮动到下一行 */
+            width: 1400px;
+        }
+
+        div.invisible {
+            /* 取消了border之后，把border的宽度加在了margin中 */
+            margin: 10px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="box">box1</div>
+            <div class="box">box2</div>
+            <div class="box">box3</div>
+        </div>
+        <div class="row">
+            <div class="box invisible"></div>
+            <div class="box">box4</div>
+            <div class="box invisible"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
