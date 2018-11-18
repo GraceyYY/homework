@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>四栏布局</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        html,
+        body {
+            margin: 0;
+            height: 100%;
+            background-color: #d1ebd4;
+        }
+
+        #container {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 250px;
+            height: 200px;
+            text-align: center;
+            margin: 10px;
+            flex: none;
+            background-color: azure;
+        }
+
+        img {
+            width: 220px;
+            height: 140px;
+            margin-top: 10px;
+        }
+
+        h3 {
+            margin: 0.5em;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <div class="card">
+            <img src="pic/1.png">
+            <h3>翱翔天际</h3>
+        </div>
+        <div class="card">
+            <img src="pic/2.png">
+            <h3>绿草如茵</h3>
+        </div>
+        <div class="card">
+            <img src="pic/3.png">
+            <h3>蓝天白云</h3>
+        </div>
+        <div class="card">
+            <img src="pic/4.png">
+            <h3>鲜花盛开</h3>
+        </div>
+
+    </div>
+</body>
+
+</html>
