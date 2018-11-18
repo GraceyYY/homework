@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>三栏-flex布局</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        html,
+        body {
+            margin: 0;
+            height: 100%;
+        }
+
+        #container {
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #left,
+        #right {
+            height: 150px;
+            width: 150px;
+            background-color: gainsboro;
+            flex-shrink: 0;
+        }
+
+        #left {
+            order: 1;
+
+        }
+
+        #main {
+            order: 2;
+            width: 100%;
+            background-color: pink;
+        }
+
+        #right {
+            order: 3;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="main">main</div>
+        <div id="left">side1</div>
+        <div id="right">side2</div>
+    </div>
+</body>
+
+</html>
