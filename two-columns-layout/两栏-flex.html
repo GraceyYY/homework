@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>两栏-flex布局</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        html,
+        body {
+            margin: 0;
+            height: 100%;
+        }
+
+        #container {
+            height: 100%;
+            display: flex;
+        }
+
+        #sidebar {
+            width: 150px;
+            height: 100%;
+            order: 2;
+            flex-shrink: 0;
+            background-color: gainsboro;
+        }
+
+        #main {
+            width: 100%;
+            height: 100%;
+            order: 1;
+            background-color: pink;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <div id="main">我是一个自适应宽度的左边输入框，我支持自动换行不会被右边导航栏所覆盖内容。</div>
+        <div id="sidebar">我是固定右边导航栏。</div>
+    </div>
+
+</body>
+
+</html>
