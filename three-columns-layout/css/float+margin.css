@@ -1,0 +1,30 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+#container {
+    height: 100%;
+}
+
+#left,
+#right {
+    height: 150px;
+    width: 150px;
+    background-color: gainsboro;
+}
+
+#left {
+    float: left;
+}
+
+#right {
+    float: right;
+}
+
+#main {
+    margin: 0 150px;
+    height: 100%;
+    background-color: pink;
+}
