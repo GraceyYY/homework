@@ -1,0 +1,29 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+#container {
+    height: 100%;
+}
+
+#sidebar {
+    width: 150px;
+    height: 100%;
+    background-color: gainsboro;
+    float: left;
+    margin-left: -150px;
+}
+
+#main {
+    height: 100%;
+    margin-right: 150px;
+    background-color: pink;
+}
+
+#main-wrap {
+    float: left;
+    height: 100%;
+    width: 100%;
+}
