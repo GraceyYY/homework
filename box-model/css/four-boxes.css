@@ -1,0 +1,19 @@
+  div.box {
+      width: 400px;
+      height: 200px;
+      border: solid 5px black;
+      margin: 5px;
+      float: left;
+  }
+
+  div.row {
+      overflow: hidden;
+      /* 防止当浏览器窗口变窄时，box自动浮动到下一行 */
+      width: 1400px;
+  }
+
+  div.invisible {
+      /* 取消了border之后，把border的宽度加在了margin中 */
+      margin: 10px;
+      border: none;
+  }
