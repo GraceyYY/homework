@@ -1,32 +1,27 @@
-html,
-body {
-    margin: 0;
-    height: 100%;
-    background-color: #d1ebd4;
+html, body {
+  margin: 0;
+  height: 100%;
+  background-color: #d1ebd4;
 }
-
 #container {
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
-
 .card {
-    width: 250px;
-    height: 200px;
-    text-align: center;
-    margin: 10px;
-    flex: none;
-    background-color: azure;
+  width: 250px;
+  height: 200px;
+  text-align: center;
+  margin: 10px;
+  flex: none;
+  background-color: azure;
 }
-
 img {
-    width: 220px;
-    height: 140px;
-    margin-top: 10px;
+  width: 220px;
+  height: 140px;
+  margin-top: 10px;
 }
-
 h3 {
-    margin: 0.5em;
+  margin: 0.5em;
 }

@@ -1,33 +1,26 @@
-html,
-body {
-    margin: 0;
-    height: 100%;
+html, body {
+  margin: 0;
+  height: 100%;
 }
-
 #container {
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
 }
-
-#left,
-#right {
-    height: 150px;
-    width: 150px;
-    background-color: gainsboro;
-    flex-shrink: 0;
+#left, #right {
+  height: 150px;
+  width: 150px;
+  background-color: gainsboro;
+  flex-shrink: 0;
 }
-
 #left {
-    order: 1;
+  order: 1;
 }
-
 #main {
-    order: 2;
-    width: 100%;
-    background-color: pink;
+  order: 2;
+  width: 100%;
+  background-color: pink;
 }
-
 #right {
-    order: 3;
+  order: 3;
 }

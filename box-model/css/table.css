@@ -1,24 +1,19 @@
 a {
-    color: blue;
+  color: blue;
 }
-
 p {
-    margin: 10px 0;
+  margin: 10px 0;
 }
-
 .container {
-    border: solid 1px darkgrey;
+  border: solid 1px darkgrey;
 }
-
 .title {
-    background-color: #f7cca2;
-    border: solid 1px darkgrey;
+  background-color: #f7cca2;
+  border: solid 1px darkgrey;
 }
-
 div.code, div.guest {
-    padding: 0 10px;
+  padding: 0 10px;
 }
-
 div.title p {
-    margin: 0px;
+  margin: 0px;
 }

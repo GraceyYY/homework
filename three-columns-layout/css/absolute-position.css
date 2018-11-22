@@ -1,35 +1,28 @@
-html,
-body {
-    margin: 0;
-    height: 100%;
+html, body {
+  margin: 0;
+  height: 100%;
 }
-
 #container {
-    height: 100%;
-    position: relative;
+  height: 100%;
+  position: relative;
 }
-
-#left,
-#right {
-    height: 150px;
-    width: 150px;
-    background-color: gainsboro;
+#left, #right {
+  height: 150px;
+  width: 150px;
+  background-color: gainsboro;
 }
-
 #left {
-    position: absolute;
-    top: 0;
-    left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-
 #right {
-    position: absolute;
-    top: 0;
-    right: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
-
 #main {
-    margin: 0 150px;
-    height: 100%;
-    background-color: pink;
+  margin: 0 150px;
+  height: 100%;
+  background-color: pink;
 }

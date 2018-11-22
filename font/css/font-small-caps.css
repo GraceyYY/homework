@@ -1,7 +1,6 @@
 p:first-letter {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
-
 #two {
-    font-variant: small-caps;
+  font-variant: small-caps;
 }
