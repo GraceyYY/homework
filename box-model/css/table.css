@@ -15,8 +15,7 @@ p {
     border: solid 1px darkgrey;
 }
 
-div.code,
-div.guest {
+div.code, div.guest {
     padding: 0 10px;
 }
 
