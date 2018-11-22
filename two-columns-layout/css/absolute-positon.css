@@ -1,5 +1,5 @@
 html, body {
-  margin: 0;
+  margin: 0px;
   height: 100%;
 }
 #container {
@@ -11,8 +11,8 @@ html, body {
   height: 100%;
   background-color: gainsboro;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 0px;
+  right: 0px;
 }
 #main {
   height: 100%;

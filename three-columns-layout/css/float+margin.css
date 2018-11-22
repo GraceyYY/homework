@@ -1,5 +1,5 @@
 html, body {
-  margin: 0;
+  margin: 0px;
   height: 100%;
 }
 #container {
@@ -17,7 +17,7 @@ html, body {
   float: right;
 }
 #main {
-  margin: 0 150px;
+  margin: 0px 150px;
   height: 100%;
   background-color: pink;
 }

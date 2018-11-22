@@ -2,7 +2,7 @@ a {
   color: blue;
 }
 p {
-  margin: 10px 0;
+  margin: 10px 0px;
 }
 .container {
   border: solid 1px darkgrey;
@@ -12,7 +12,7 @@ p {
   border: solid 1px darkgrey;
 }
 div.code, div.guest {
-  padding: 0 10px;
+  padding: 0px 10px;
 }
 div.title p {
   margin: 0px;

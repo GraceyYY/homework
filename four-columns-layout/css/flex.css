@@ -1,5 +1,5 @@
 html, body {
-  margin: 0;
+  margin: 0px;
   height: 100%;
   background-color: #d1ebd4;
 }
@@ -23,5 +23,5 @@ img {
   margin-top: 10px;
 }
 h3 {
-  margin: 0.5em;
+  margin: 12px;
 }
