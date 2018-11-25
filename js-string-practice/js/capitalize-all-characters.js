@@ -8,3 +8,4 @@ function capitalizeAllCharacters(string) {
     return result;
 }
 
+document.getElementById("output").innerHTML = capitalizeAllCharacters(NAME);
