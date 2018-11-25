@@ -9,3 +9,4 @@ function capitalizeTheFirstLetterOfWordsInTheSentence(sentence) {
     }
     return result;
 }
+document.getElementById("output").innerHTML += capitalizeTheFirstLetterOfWordsInTheSentence(SENTENCE);
