@@ -15,5 +15,13 @@ function multiplyByTwo(array) {
     return (item * 2);
   })
 }
-
 console.log(multiplyByTwo(C));
+//Task3: join the items of the array with "," , "+" and space.
+const COLORS = ["Red", "Green", "White", "Black"];
+
+function joinTheArray() {
+  console.log(COLORS.join(" "));
+  console.log(COLORS.join("+"));
+  console.log(COLORS.join(","));
+}
+joinTheArray();
