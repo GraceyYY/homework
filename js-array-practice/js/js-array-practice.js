@@ -38,7 +38,35 @@ function compare(val1, val2) {
   }
 }
 console.log(TO_BE_SORTED.sort(compare));
-//Task5: find the item that appears most in the array.
+//Task5: find the item that appears most frequently in the array.
 const CONTENT = [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
 
-function findAppearsTheMost()
+function findAppearsTheMostFrequently(arr) {
+  function uniqueArr(arr) {
+    return Array.from(new Set(arr));
+  }
+
+  function convertArrToObj(arr) {
+    let obj = {};
+    for (let item of arr) {
+      obj[item] = 0;
+    }
+    return obj;
+  }
+
+  let uniqueArray = uniqueArr(arr);
+  let uniqueObj = convertArrToObj(uniqueArray);
+  for (let item of arr) {
+    uniqueObj[item] += 1;
+  }
+
+  let value, count = 0;
+  for (let item of uniqueArray) {
+    if (uniqueObj[item] > count) {
+      value = item;
+      count = uniqueObj[item];
+    }
+  }
+  console.log(`In the array, ${value} appears the most frequently. It appears ${count} times.`);
+}
+findAppearsTheMostFrequently(CONTENT);
