@@ -13,3 +13,8 @@ function alphabetSort(message) {
   return message.split('').sort().join('');
 }
 console.log(alphabetSort('hello'));
+
+function countWords(message) {
+  return message.split(' ').length;
+}
+console.log(countWords('Good morning, I love JavaScript.'));
