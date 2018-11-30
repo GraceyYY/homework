@@ -5,10 +5,15 @@ function isOdd(n) {
     return true;
   }
 }
-for (let i = 1; i <= 20; i++) {
-  if (isOdd(i)) {
-    console.log(`${i}是奇数。`);
-  } else {
-    console.log(`${i}是偶数。`);
+
+function showResult() {
+  for (let i = 1; i <= 20; i++) {
+    if (isOdd(i)) {
+      console.log(`${i}是奇数。`);
+    } else {
+      console.log(`${i}是偶数。`);
+    }
   }
 }
+
+showResult();
