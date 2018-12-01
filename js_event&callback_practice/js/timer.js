@@ -7,3 +7,7 @@ function timer() {
     show(seconds);
   }, 1000);
 }
+function show(seconds) {
+  document.getElementById("result").innerHTML = seconds;
+}
+
