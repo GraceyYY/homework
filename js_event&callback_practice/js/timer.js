@@ -11,3 +11,11 @@ function show(seconds) {
   document.getElementById("result").innerHTML = seconds;
 }
 
+function start() {
+  show(0);
+  timer();
+}
+
+function stop() {
+  clearInterval(interval);
+}
