@@ -6,6 +6,7 @@ function check() {
   let loginMsg = document.querySelector('p.login-msg');
 
   clearErrMsg();
+
   let isUsernameValid = checkUsername();
   let isPasswordValid = checkPassword();
 
