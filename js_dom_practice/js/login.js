@@ -65,5 +65,6 @@ function check() {
   function clearErrMsg() {
     usernameErr.innerText = '';
     passwordErr.innerText = '';
+    loginMsg.innerText = '';
   }
 }
