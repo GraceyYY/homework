@@ -5,8 +5,8 @@ function check() {
   let passwordErr = document.querySelector('p.password-err');
   let loginMsg = document.querySelector('p.login-msg');
 
+
   function showErr(err) {
-    isLoginSuccess(false);
     switch (err) {
       case 'username-err':
         usernameErr.innerText = '用户名错误';
@@ -60,7 +60,7 @@ function check() {
     }
   }
 
-  function clearPassword(){
+  function clearPassword() {
     password.value = '';
   }
 }
