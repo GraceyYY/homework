@@ -5,7 +5,6 @@ function check() {
   let passwordErr = document.querySelector('p.password-err');
   let loginMsg = document.querySelector('p.login-msg');
 
-
   function showErr(err) {
     switch (err) {
       case 'username-err':
@@ -21,8 +20,7 @@ function check() {
         passwordErr.innerText = '密码为空';
         break;
       default:
-        usernameErr.innerText = '';
-        passwordErr.innerText = '';
+        clearErrMsg();
     }
   }
 
@@ -62,5 +60,10 @@ function check() {
 
   function clearPassword() {
     password.value = '';
+  }
+
+  function clearErrMsg() {
+    usernameErr.innerText = '';
+    passwordErr.innerText = '';
   }
 }
