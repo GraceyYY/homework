@@ -12,13 +12,13 @@ function check() {
         usernameErr.innerText = '用户名错误';
         break;
       case 'username-null':
-        usernameErr.innerText = '请输入用户名';
+        usernameErr.innerText = '用户名为空';
         break;
       case 'password-err':
         passwordErr.innerText = '密码错误';
         break;
       case 'password-null':
-        passwordErr.innerText = '请输入密码';
+        passwordErr.innerText = '密码为空';
         break;
       default:
         usernameErr.innerText = '';
@@ -27,12 +27,12 @@ function check() {
   }
 
   function isLoginSuccess(state) {
-
     if (state) {
       loginMsg.innerText = '登录成功';
     } else {
       loginMsg.innerText = '登录失败';
     }
   }
+
 
 }
