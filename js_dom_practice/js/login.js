@@ -59,4 +59,8 @@ function check() {
       return false
     }
   }
+
+  function clearPassword(){
+    password.value = '';
+  }
 }
