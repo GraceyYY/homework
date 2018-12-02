@@ -34,5 +34,29 @@ function check() {
     }
   }
 
+  function checkUsername() {
+    if (username.value === '123') {
+      return true;
+    } else {
+      if (username.value === '') {
+        showErr('username-null');
+      } else {
+        showErr('username-err');
+      }
+      return false
+    }
+  }
 
+  function checkPassword() {
+    if (password.value === '123') {
+      return true;
+    } else {
+      if (password.value === '') {
+        showErr('password-null');
+      } else {
+        showErr('password-err');
+      }
+      return false
+    }
+  }
 }
