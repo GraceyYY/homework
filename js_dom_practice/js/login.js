@@ -5,31 +5,21 @@ function check() {
   let passwordErr = document.querySelector('p.password-err');
   let loginMsg = document.querySelector('p.login-msg');
 
-  function showErr(err) {
-    switch (err) {
-      case 'username-err':
-        usernameErr.innerText = '用户名错误';
-        break;
-      case 'username-null':
-        usernameErr.innerText = '用户名为空';
-        break;
-      case 'password-err':
-        passwordErr.innerText = '密码错误';
-        break;
-      case 'password-null':
-        passwordErr.innerText = '密码为空';
-        break;
-      default:
-        clearErrMsg();
-    }
+  clearErrMsg();
+  let isUsernameValid = checkUsername();
+  let isPasswordValid = checkPassword();
+
+  if (isUsernameValid && isPasswordValid) {
+    isLoginSuccess(true);
+  } else {
+    clearPassword();
+    isLoginSuccess(false);
   }
 
-  function isLoginSuccess(state) {
-    if (state) {
-      loginMsg.innerText = '登录成功';
-    } else {
-      loginMsg.innerText = '登录失败';
-    }
+  function clearErrMsg() {
+    usernameErr.innerText = '';
+    passwordErr.innerText = '';
+    loginMsg.innerText = '';
   }
 
   function checkUsername() {
@@ -58,13 +48,34 @@ function check() {
     }
   }
 
-  function clearPassword() {
-    password.value = '';
+  function showErr(err) {
+    switch (err) {
+      case 'username-err':
+        usernameErr.innerText = '用户名错误';
+        break;
+      case 'username-null':
+        usernameErr.innerText = '用户名不能为空';
+        break;
+      case 'password-err':
+        passwordErr.innerText = '密码错误';
+        break;
+      case 'password-null':
+        passwordErr.innerText = '密码不能为空';
+        break;
+      default:
+        clearErrMsg();
+    }
   }
 
-  function clearErrMsg() {
-    usernameErr.innerText = '';
-    passwordErr.innerText = '';
-    loginMsg.innerText = '';
+  function isLoginSuccess(state) {
+    if (state) {
+      loginMsg.innerText = '登录成功';
+    } else {
+      loginMsg.innerText = '登录失败';
+    }
+  }
+
+  function clearPassword() {
+    password.value = '';
   }
 }
