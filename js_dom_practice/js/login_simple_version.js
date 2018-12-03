@@ -1,54 +1,41 @@
 let username = document.getElementById('username');
 let password = document.getElementById('password');
-let errMsg = document.querySelector('p.err-msg');
-let loginMsg = document.querySelector('p.login-msg');
 
-function isEmpty() {
-  if (username.value != '' && password.value != '') {
-    return false;
-  } else {
-    showErr('empty');
-    isLoginSuccess(false);
-    return true;
-  }
+function isNotEmpty() {
+  return username.value && password.value;
 }
 
 function checkLogin() {
-  clearErrMsg();
-  if (!isEmpty()) {
-    if (username.value === '123' && password.value === '123') {
-      isLoginSuccess(true);
-    } else {
-      clearPassword();
-      showErr('error');
-      isLoginSuccess(false);
-    }
+  let notEmpty = isNotEmpty();
+  if (!notEmpty) {
+    showMessage('empty');
+    clearPassword();
+    return;
+  }
+  if (username.value === '123' && password.value === '123') {
+    showMessage('success');
+  } else {
+    showMessage('error');
+    clearPassword();
   }
 }
 
-function clearErrMsg() {
-  errMsg.innerText = '';
-  loginMsg.innerText = '';
-}
-
-function showErr(err) {
-  switch (err) {
+function showMessage(msg) {
+  let errMsg = document.getElementById('err_msg');
+  let loginMsg = document.getElementById('login_msg');
+  switch (msg) {
+    case 'success':
+      loginMsg.innerText = '登录成功';
+      break;
     case 'error':
       errMsg.innerText = '用户名或密码错误';
+      loginMsg.innerText = '登录失败';
       break;
     case 'empty':
       errMsg.innerText = '用户名或密码不能为空';
+      loginMsg.innerText = '登录失败';
       break;
     default:
-      clearErrMsg();
-  }
-}
-
-function isLoginSuccess(state) {
-  if (state) {
-    loginMsg.innerText = '登录成功';
-  } else {
-    loginMsg.innerText = '登录失败';
   }
 }
 
