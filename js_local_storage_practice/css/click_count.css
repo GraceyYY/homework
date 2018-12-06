@@ -1,0 +1,16 @@
+body {
+    height: 100%;
+    text-align: center;
+}
+#number {
+    height: 50px;
+    width: 100px;
+    margin: 20px auto;
+    text-align: center;
+
+}
+button {
+    height: 50px;
+    width: 50px;
+    font-size: 28px;
+}
