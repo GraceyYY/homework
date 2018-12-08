@@ -1,0 +1,108 @@
+* {
+/*    border: solid white 1px;
+    color: white;*/
+}
+
+body {
+  background-color: #000000;
+  height: 100%;
+  width: 100%;
+}
+header {
+  background: url(../images/starfield_banner.jpg);
+  width: 90%;
+  height: 100px;
+  display: flex;
+}
+ul {
+  list-style:none;
+  display:inline-flex;
+  float: right;
+}
+nav li {
+  padding: 0px 10px;
+  border-right: solid 1px #fcfcfc;
+}
+main {
+  width: 90%;
+  display: none;
+}
+footer {
+  display: none;
+}
+.col {
+  width: 100%;
+}
+.center {
+  margin: 0px auto;
+}
+.text_center {
+  text-align: center;
+}
+.small_font {
+font-size: 10px;
+}
+.medium_font{
+  font-size: 14px;
+}
+.big_font {
+font-size: 16px;
+}
+.white {
+  color: #fcfcfc;
+}
+.thin {
+  font-weight: 300;
+}
+.icon {
+  height: 25px;
+  width: 25px;
+}
+.clear_border {
+  border-style: none;
+}
+#logo {
+  height:90px;
+  width:90px;
+}
+.nav_wraper {
+  margin-right: 10px;
+}
+
+.main_nav {
+  padding: 5px 15px;
+  margin-bottom: 10px;
+}
+.sub_nav {
+  padding: 5px;
+  background-color: #555555;
+}
+
+.search_bar {
+  width: 300px;
+  height: 40px;
+  margin-top: 14px;
+  position: relative;
+}
+#search {
+  height: 25px;
+  width: 120px;
+  background-color: #333333;
+  padding: 5px;
+}
+#search_icon {
+  position:absolute;
+  left: 100px;
+  top:6px;
+}
+#share_icon {
+ position:absolute;
+  left: 130px;
+  top:6px;
+}
+.load_more {
+  width: 100%;
+  height: 46px;
+  background-color: #244383;
+  overflow:hidden;
+}
